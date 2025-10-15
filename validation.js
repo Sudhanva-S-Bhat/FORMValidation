@@ -11,25 +11,25 @@ document.addEventListener('DOMContentLoaded',()=> {
             emailFeedback.textContent='Valid email!';
             emailFeedback.className='valid';
         } else {
-            emailFeedback.textContent='Please enter a valid email address!';
+            emailFeedback.textContent='Please enter a valid email address.';
             emailFeedback.className='error';
         }
     });
     password.addEventListener('input',()=> {
-        if(password.Value.length>=8) {
+        if(password.value.length>=8) {
             passwordFeedback.textContent='Password is strong!';
             passwordFeedback.className='valid';
         } else {
-            passwordFeedback.textContent='Password must be at least 8 character long!';
+            passwordFeedback.textContent='Password must be at least 8 character long.';
             passwordFeedback.className='error';
         }
     });
     username.addEventListener('input',()=> {
-        if(username.Value.length>=3) {
+        if(username.value.length>=3) {
             usernameFeedback.textContent='Username looks good!';
             usernameFeedback.className='valid';
         } else {
-            usernameFeedback.textContent='Username must be at least 3 characters long';
+            usernameFeedback.textContent='Username must be at least 3 characters long.';
             usernameFeedback.className='error';
         }
     });
